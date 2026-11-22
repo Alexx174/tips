@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#151412">
+<title>Классный час — поддержи живую музыку</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100svh;background:radial-gradient(ellipse at top,#35291e 0,#151412 45%,#101010 100%);color:#f8f4ed;font:16px/1.5 system-ui,-apple-system,sans-serif}main{max-width:440px;margin:auto;padding:42px 22px 32px;text-align:center}.eyebrow{font-size:11px;letter-spacing:.28em;color:#d8b779;font-weight:700}.mark{font-size:48px;color:#d8b779;margin:14px 0 8px}h1{font-family:Georgia,serif;font-size:46px;line-height:1.05;margin:12px 0 22px;font-weight:normal}h2{font-size:21px;margin:25px 0 8px}p{color:#c9c1b6;margin:8px 0 24px}.rule{height:1px;background:linear-gradient(90deg,transparent,#a58955,transparent);margin:28px 0}.pay,summary{display:flex;align-items:center;justify-content:space-between;padding:17px 18px;border-radius:14px;font-size:17px;font-weight:700;text-decoration:none;min-height:58px;cursor:pointer}.pay{margin:12px 0}.sber{background:#147c42;color:white}.tbank{background:#ffdd2d;color:#171717}details{background:#252421;border:1px solid #50483b;border-radius:14px;margin-top:12px}summary{list-style:none;text-align:left}summary::-webkit-details-marker{display:none}details[open] .arrow{transform:rotate(90deg)}.inside{padding:0 16px 18px}.phone{font-size:24px;font-weight:650;letter-spacing:.02em;margin:12px 0;color:#fff}button{font:inherit;font-weight:650;border:1px solid #ad925c;background:transparent;color:#f2d49a;border-radius:10px;padding:12px;width:100%;cursor:pointer}ol{text-align:left;color:#d1c9bf;font-size:14px;padding-left:22px}li{margin:7px 0}.small{font-size:12px;color:#b9b1a5;margin:18px 0}footer{color:#d8b779;font-family:Georgia,serif;font-size:19px;margin-top:28px}a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid white;outline-offset:4px}#status{min-height:24px;font-size:13px;color:#e5ce9b;margin-top:8px}.bank-label{font-weight:700;color:#fff}
+</style>
+</head>
+<body><main>
+<header><div class="eyebrow">МУЗЫКАЛЬНАЯ ГРУППА</div><div class="mark" aria-hidden="true">♫</div><h1>Классный час</h1></header>
+<div class="rule"></div><h2>Поддержи живую музыку</h2><p>Понравилось наше выступление?<br>Ваши чаевые — наше вдохновение!</p>
+<a class="pay sber" href="https://messenger.online.sberbank.ru/sl/smOHJqUO4Jvmkkmuy"><span>Сбербанк</span><span aria-hidden="true">↗</span></a>
+<a class="pay tbank" href="https://www.tbank-online.com/rm/r_XhPALygkIq.uIZVBvMCam/yjCEx758/"><span>Т-Банк</span><span aria-hidden="true">↗</span></a>
+<details><summary><span>Другие банки — СБП</span><span class="arrow" aria-hidden="true">›</span></summary><div class="inside"><div class="small">Номер телефона для перевода</div><div class="phone" id="phone">+7 911 487-12-28</div><button id="copy" type="button">Скопировать номер</button><div id="status" role="status" aria-live="polite"></div><div>Банк получателя: <span class="bank-label">Т-Банк</span></div><ol><li>Скопируйте номер телефона.</li><li>Откройте приложение своего банка.</li><li>Выберите перевод по номеру телефона через СБП.</li><li>Вставьте номер, выберите Т-Банк, проверьте получателя и укажите сумму.</li></ol></div></details>
+<p class="small">Сумму выбираете вы. Комиссия, если предусмотрена, зависит от тарифа вашего банка. Проверяйте получателя перед переводом.</p><footer>Спасибо, что цените живую музыку! ♡</footer>
+</main><script>
+const number='+79114871228';document.getElementById('copy').addEventListener('click',async()=>{const status=document.getElementById('status');try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(number)}else{const el=document.createElement('textarea');el.value=number;el.style.position='fixed';el.style.opacity='0';document.body.append(el);el.select();const ok=document.execCommand('copy');el.remove();if(!ok)throw Error('copy')}status.textContent='Номер скопирован!'}catch(e){status.textContent='Не удалось скопировать автоматически. Скопируйте номер вручную.'}});
+</script></body></html>
